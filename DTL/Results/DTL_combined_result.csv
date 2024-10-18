@@ -1,0 +1,6 @@
+Serial,Algorithm,Accuracy,Precision,Recall,F1 Score,Cohens kappa,ROC AUC,Train Time,Test Time,Hidden Layer ,Units in hidden layers,Epochs,Batch size ,Hidden layers activation function ,Output activation function ,Loss function ,Dropout,Optimiser,Total params,Trainable params,Non-Trainable params
+1,DTL-CNN,0.990672885,0.990256038,0.990672885,0.990207331,0.815776554,0.871064217,564.3212907,0.559,4,"32,64,256,128",1000,64,relu,sigmoid,binary_crossentropy,N/A,Adam,710,710,0
+2,DTL-FCN,0.986009327,0.985855726,0.986009327,0.985929427,0.745743025,0.868663668,4036.218181,2.8523,3,"128,256,128",1000,64,relu,softmax,categorical_crossentropy,N/A,Adam,"265,986","264,962","1,024"
+3,DTL-IncepNet,0.990006662,0.989591127,0.990006662,0.989706779,0.809699695,0.882006253,788.9056828,0.6189,3,"32,64,32",1000,64,linear,softmax,categorical_crossentropy,N/A,Adam,"3,074","28,18",256
+4,DTL-LeNet,0.990672885,0.990323573,0.990672885,0.990075197,0.811089736,0.859779245,503.2535744,0.4324,2,"5,20",1000,64,relu,softmax,categorical_crossentropy,N/A,Adam,"22,052","22,052",0
+5,DTL-ResNet,0.990005338,0.990137127,0.99030533,0.989806283,0.802094189,0.843035059,1210.073948,1.9008,2,"32,64",1000,64,relu,softmax,categorical_crossentropy,N/A,SGD,"25,998","25,998",0
